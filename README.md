@@ -18,11 +18,6 @@ This project is a lightweight containerization tool developed in Go. It simulate
 
 ## Getting Started
 
-### Prerequisites
-
-- Go 1.18 or higher
-- Linux-based operating system with kernel support for namespaces and cgroups
-
 ### Installation
 
 Clone the repository:
@@ -32,12 +27,10 @@ git clone https://github.com/AYGA2K/go-container.git
 cd go-container
 ```
 
-````
-
 Build the project:
 
 ```bash
-go build -o container-tool
+go build -o go-container
 ```
 
 ### Usage
@@ -45,8 +38,7 @@ go build -o container-tool
 To run a command within an isolated environment:
 
 ```bash
-./container-tool run /bin/bash
+sduo ./go-container run /bin/bash
 ```
 
 This command will execute `/bin/bash` in a new container-like environment with process isolation and resource management.
-````
