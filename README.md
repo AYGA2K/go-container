@@ -27,6 +27,18 @@ git clone https://github.com/AYGA2K/go-container.git
 cd go-container
 ```
 
+Download the ubuntu base filesystem:
+
+```bash
+curl -O https://cdimage.ubuntu.com/ubuntu-base/releases/22.04/release/ubuntu-base-22.04-base-amd64.tar.gz
+```
+
+Extract the Ubuntu base filesystem into a directory that will be used as the container's root filesystem (rootfs):
+
+```bash
+tar -xvzf ubuntu-base-22.04-base-amd64.tar.gz -C rootfs/
+```
+
 Build the project:
 
 ```bash
